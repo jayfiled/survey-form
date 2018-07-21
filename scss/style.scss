@@ -1,0 +1,90 @@
+$background: rgba(131, 149, 167,1.0);
+$form-paper: rgba(29, 209, 161,1.0);
+
+body {
+  background: rgba(131, 149, 167,1.0)
+}
+
+#container {
+  background: $background;
+  font-family: 'Alegreya Sans', sans-serif;
+  text-align: center;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 33%);
+  grid-template-rows: repeat(3, 33%);
+  grid-template-areas:
+    "header header header"
+    "lpanel paper rpanel"
+    "footer footer footer";
+  grid-gap: 10px;
+}
+
+#header {
+  grid-area: header;
+  background: $background;
+}
+
+#left-panel {
+  grid-area: lpanel;
+  background: $background;
+}
+
+#form-paper {
+  padding: 2em;
+  grid-area: paper;
+  display: grid;
+  grid-template-columns: 1.5fr 2fr;
+  background: $form-paper;
+  border-radius: 0.5em;
+  grid-gap: 1em;
+}
+
+#radio-group {
+  display: grid;
+  padding: 1em 0em 1em 0em;
+  grid-template-columns: 2fr 2fr;
+}
+
+#checkbox-group {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+#form-text {
+  text-align: right;
+}
+
+.form-fields {
+  text-align: left;
+  align-self: start;
+  // border: dashed 1px; 
+}
+
+#right-panel {
+  grid-area: rpanel;
+}
+
+#footer {
+  grid-area: footer;
+  background: $background;
+}
+
+input, select, br {
+    -webkit-margin-before: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+
+button {
+  grid-area: paper;
+  padding: 1em;
+  margin: 1.5em 0em 0em 0em;
+  border: none;
+  border-radius: 0.5em;
+  background-color: $background;
+}
+
+#textplz {
+  margin: 1.5em 0em 0em 0em;
+}

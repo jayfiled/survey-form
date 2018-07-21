@@ -1,0 +1,83 @@
+body {
+  background: #8395a7;
+}
+
+#container {
+  background: #8395a7;
+  font-family: 'Alegreya Sans', sans-serif;
+  text-align: center;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 33%);
+  grid-template-rows: repeat(3, 33%);
+  grid-template-areas: "header header header" "lpanel paper rpanel" "footer footer footer";
+  grid-gap: 10px;
+}
+
+#header {
+  grid-area: header;
+  background: #8395a7;
+}
+
+#left-panel {
+  grid-area: lpanel;
+  background: #8395a7;
+}
+
+#form-paper {
+  padding: 2em;
+  grid-area: paper;
+  display: grid;
+  grid-template-columns: 1.5fr 2fr;
+  background: #1dd1a1;
+  border-radius: 0.5em;
+  grid-gap: 1em;
+}
+
+#radio-group {
+  display: grid;
+  padding: 1em 0em 1em 0em;
+  grid-template-columns: 2fr 2fr;
+}
+
+#checkbox-group {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+#form-text {
+  text-align: right;
+}
+
+.form-fields {
+  text-align: left;
+  align-self: start;
+}
+
+#right-panel {
+  grid-area: rpanel;
+}
+
+#footer {
+  grid-area: footer;
+  background: #8395a7;
+}
+
+input, select, br {
+  -webkit-margin-before: 1em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+}
+
+button {
+  grid-area: paper;
+  padding: 1em;
+  margin: 1.5em 0em 0em 0em;
+  border: none;
+  border-radius: 0.5em;
+  background-color: #8395a7;
+}
+
+#textplz {
+  margin: 1.5em 0em 0em 0em;
+}
